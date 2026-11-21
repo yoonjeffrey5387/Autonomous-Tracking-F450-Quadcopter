@@ -29,6 +29,7 @@ flowchart LR
 ## Repository
 | Folder | What's inside |
 |---|---|
+| [`docs/capstone-report-es.pdf`](docs/capstone-report-es.pdf) | Full capstone report (Spanish, 59 pages): design, experiments, results, problems and solutions, cost analysis. |
 | [`companion/`](companion) | `follow_person.py`: a condensed, readable version of the on-board tracking loop (YOLO + ByteTrack → pinhole distance → MAVLink velocity setpoints with the safety gate). The flight version adds OSNet re-ID, TensorRT engines and the web UI. |
 | [`firmware/dron_f450_v4/`](firmware/dron_f450_v4) | Our own **ESP32-S3 flight controller** from the first phase of the project (v0): 250 Hz loop, cascaded PID with derivative-on-measurement, feed-forward and anti-windup, quaternion attitude from a BNO086 IMU, filtered BME688 barometer, GPS with quality gating, X-quad mixer with TPA and saturation handling, two-level radio failsafe. |
 | [`firmware/control_f450_v3_1/`](firmware/control_f450_v3_1) | The ESP32 handheld remote that talks to the flight controller over ESP-NOW. |
